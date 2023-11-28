@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- locomotive css --> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
 <body>
-
-    <!-- Nav Bar -->
     <div class="nav">
         <div class="logo"><span id="lf">MD_Kaif</span> Manzar</div>
         <div class="menu">
@@ -18,57 +18,82 @@
             <a href="#portfolio" class="nav_items">PORTFOLIO</a>
             <a href="#contact" class="nav_items">CONTACT</a>
         </div>
-    </div>
-    
-    
-    
-    <!-- Landing page -->
-    <div class="landing_page" id="home">
-        <div class="side_text">
-            <h3>Hi There! I'm</h3>
-            <div class="animated_text">
-                <h1>Web Developer</h1>
-            </div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
-            <br>
-            <button>Download CV</button>
+        
+        <div class="hamburger" onclick={toggle_dropdown()}>
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
         </div>
+        <div id="drop_menu">
+            <a href="#home" class="nav_items">HOME</a>
+            <a href="#about" class="nav_items">ABOUT</a>
+            <a href="#services" class="nav_items">SERVICES</a>
+            <a href="#resume" class="nav_items">RESUME</a>
+            <a href="#portfolio" class="nav_items">PORTFOLIO</a>
+            <a href="#contact" class="nav_items">CONTACT</a>
+        </div>
+        
     </div>
-
-    <!-- About me -->
-    <div id="about">
-        <div class="about_welcome_content">
-            <h1 id="heading_name">About Me</h1>
-            <h4>Professional Profile-There Is All About Me</h4>
-            <h1 id="dot">....</h1>
+    <div id="main">
+        <!-- Nav Bar -->
+        
+        
+        
+        
+        <!-- Landing page -->
+        <div class="landing_page" id="home">
+            <div class="side_text">
+                <h3>Hi There! I'm</h3>
+                <div class="animated_text">
+                    <h1>Web Developer</h1>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                <br>
+                <button>Download CV</button>
+            </div>
         </div>
 
-        <div class="about_content">
-            <div class="image_section">
-                
-                <div class="image_border profile_image"></div><img src="./profile.jpeg" alt="profile" class="profile_image">
+        <!-- About me -->
+        <div id="about">
+            <div class="about_welcome_content">
+                <h1 id="heading_name">About Me</h1>
+                <h4>Professional Profile-There Is All About Me</h4>
+                <h1 id="dot">....</h1>
             </div>
-            <div class="text_section">
-                <h2>I'm Md Kaif Manzar</h2>
-                <h6 class="underline"></h6>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus quae error odit.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus quae error odit.</p>
-                <br>
-                <div class="about_hilights">
-                    <div ><b>Date of birth:</b> 21 june 1990</div>
-                    <div ><b>Nationality:</b> Russian</div>
-                    <div ><b>Freelance:</b> Available</div>
-                    <div ><b>Phone:</b> +34 21 18 40 10</div>
-                    <div ><b>Address:</b> Moscow, Russia</div>
-                    <div ><b>Email:</b> you@yourwebsite.com</div>
-                    <div ><b>Spoken Langages:</b> French - German</div>
-                    <div ><b>Skype:</b> jesica.silva</div>
+            <br><br>
+            <div class="about_content">
+                <div class="image_section">
+                    
+                    <div class="image_border profile_image"></div><img src="./profile.jpeg" alt="profile" class="profile_image">
+                </div>
+                <div class="text_section">
+                    
+                    <h2>I'm Md Kaif Manzar</h2>
+                    <h6 class="underline"></h6>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus quae error odit.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus quae error odit.</p>
+                    <br>
+                    <div class="about_hilights">
+                        <div ><b>Date of birth:</b> 21 june 1990</div>
+                        <div ><b>Nationality:</b> Russian</div>
+                        <div ><b>Freelance:</b> Available</div>
+                        <div ><b>Phone:</b> +34 21 18 40 10</div>
+                        <div ><b>Address:</b> Moscow, Russia</div>
+                        <div ><b>Email:</b> you@yourwebsite.com</div>
+                        <div ><b>Spoken Langages:</b> French - German</div>
+                        <div ><b>Skype:</b> jesica.silva</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    
+   
+    <!-- locomotive js cdn --><script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6p Q4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 </html>

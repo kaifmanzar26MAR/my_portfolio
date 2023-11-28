@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600&family=Lato:ital,wght@0,300;0,400;0,900;1,700&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color: rgb(3, 3, 3);
+    background-color: rgb(16, 15, 15);
     color: white;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+/* font-family: 'Lato', sans-serif; */
 }
 .nav{
     width: 100%;
@@ -15,27 +23,60 @@ body{
     display: flex;
     background-color: rgba(0, 0, 0, 0.534);
     color: white;
-    /* padding: 35px 0 35px 0; */
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    z-index: 99;
 }
 .nav .logo{
+    width: 40%;
+    /* background-color: red; */
     font-size: 30px;
+    /* padding-left: 40px; */
 }
 .nav .logo #lf{
     color:#ff5d56;
 }
 .nav .menu{
-    width: 55%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+.hamburger{
+    display: none;
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px ;
 }
 .nav .menu a{
+    font-weight: 400;
+    
+    font-size: small;
     text-decoration: none;
-    color: white;
+    color: rgb(225, 223, 223);
+}
+.nav #drop_menu{
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.464);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 13vh;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+   
+}
+.nav #drop_menu a{
+    font-weight: 400;
+    
+    font-size: small;
+    text-decoration: none;
+    color:white;
 }
 .nav .menu a:hover{
     color: #ff5d56;
@@ -59,12 +100,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 5vw;
     margin-top: 12vh;
 }
-.landing_page .side_text h3{
-    color: #ff5d56;
-}
+
 
 .landing_page .side_text .animated_text{
     color: #ff5d56;
@@ -77,9 +116,9 @@ body{
     font-size: larger;
 }
 .landing_page .side_text button{
-    width: 30%;
+    width: 30vmin;
     height: 18%;
-    
+    padding: 20px ;
     background-color: transparent;
     color: white;
     border: 2px solid white;
@@ -93,12 +132,14 @@ body{
 
 #about{
     width: 100vw;
-    height: 100vh; 
+    height: 115vh; 
     background-color: #111111;
+    /* overflow: hidden; */
 }
 #about .about_welcome_content{
     width: 100%;
     height: 20%;
+    padding-top: 5%;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -123,20 +164,23 @@ body{
 }
 #about .about_content .image_section{
     width: 60%;
+    position: relative;
 }
 
 #about .about_content .image_section img{
     width: 100%;
-    position: relative;
-    top:-68%;
-    
+    position: absolute;
+    height: 56vh;
+    /* display: none; */
+
 }
 #about .about_content .image_section .image_border{
     /* z-index: 10; */
-    position: relative;
+    position: absolute;
     border: 1px solid white;
-    height: 68%;
-    left: 10px;
+    height: 55vh;
+    width: 100%;
+    left: 8px;
     top:15px;
     opacity: 0.1;
 }
@@ -160,4 +204,23 @@ body{
     line-height: 30px;
     width: 100%;
     height: 30%;
+}
+
+
+@media (max-width:1024px) {
+    .nav .menu{
+        display: none;
+    }
+    .nav .logo{
+        width: 80%;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+@media (min-width:1024px) {
+    
+    #drop_menu{
+        display: none;
+    }
 }
