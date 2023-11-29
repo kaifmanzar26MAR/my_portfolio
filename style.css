@@ -5,6 +5,9 @@
     padding: 0;
     margin: 0;
 }
+
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -163,7 +166,7 @@ body{
     gap: 50px;
 }
 #about .about_content .image_section{
-    width: 60%;
+    width: 700px;
     position: relative;
 }
 
@@ -189,8 +192,8 @@ body{
 }
 #about .about_content .text_section h6{
     margin: 20px 0px 20px 0px;
-    width: 5%;
-    height: 1%;
+    width: 50px;
+    height: 5px;
     background-color:#ff5d56;
 }
 #about .about_content .text_section p{
@@ -203,7 +206,7 @@ body{
     flex-direction: column;
     line-height: 30px;
     width: 100%;
-    height: 30%;
+    height: 27%;
 }
 
 
@@ -216,6 +219,35 @@ body{
     }
     .hamburger{
         display: block;
+    }
+    .landing_page .side_text{
+        width: 80%;
+    }
+    .landing_page .side_text p{
+        width: 80%;
+        font-size: large;
+    }
+    .landing_page .side_text button{
+        width: 20vmax;
+    }
+    #about{
+        height: 197vh;
+    }
+    #about .about_content{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #about .about_content .image_section{
+        width: 300px;
+        
+    }
+    #about .about_content .text_section{
+        margin-top: 57vh;
+        font-size: 16px;
+    }
+    #about .about_content .text_section p{
+        font-size: 16px;
     }
 }
 @media (min-width:1024px) {
