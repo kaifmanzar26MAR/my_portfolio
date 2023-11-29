@@ -96,25 +96,66 @@ body{
     justify-content: center;
 }
 .landing_page .side_text{
-    width: 40%;
-    height: 50%;
+    width: 50%;
+    height: fit-content;
     line-height: 55px;
     /* background-color: red; */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 5vw;
     margin-top: 12vh;
+    overflow: hidden;
 }
 
 
 .landing_page .side_text .animated_text{
+    padding:10px 0px 20px 0px ;
+}
+.landing_page .side_text .animated_text::after{
+    content: "Web Developer....";
     color: #ff5d56;
-    font-size: 27px;
+    font-size: 8vmin;
     padding: 10px 0px 30px 0px;
+    animation: text_change 9s infinite;
+}
+@keyframes text_change {
+    0%{
+        content: "Web Developer....";
+    }
+    33.3%{
+        content: "Frontend Developer";
+    }
+    66.6%{
+        content: "FullStack Developer";
+    }
+
+}
+
+.landing_page .side_text .black{
+    width: 76vmin;
+    height: 10vmin;
+    background-color: #060606;
+    position: absolute;
+    animation: side 3s infinite;
+    border-left: 2px solid white;
+}
+
+@keyframes side {
+    0%{
+        left: 76vmin;
+    }
+    30%{
+        left: 0vw;
+    }
+    60%,100%{
+        left: 76vmin;
+    }
 }
 
 .landing_page .side_text p{
+    width: 80%;
     line-height: 30px;
     font-size: larger;
 }
@@ -125,6 +166,7 @@ body{
     background-color: transparent;
     color: white;
     border: 2px solid white;
+   
     border-radius: 5px 5px 5px 5px;
 
 }
@@ -132,6 +174,16 @@ body{
     color:#ff5d56;
     border: 2px solid #ff5d56;
 }
+/* .landing_page .side_text button::before{
+    content: " ";
+    position: absolute;
+    display: inline-block;
+    width: 30vmin;
+    overflow: hidden;
+    height: 20px;
+    background-color: red;
+    
+} */
 
 #about{
     width: 100vw;
@@ -208,7 +260,9 @@ body{
     width: 100%;
     height: 27%;
 }
-
+#about .about_content .text_section .about_hilights i{
+    color:#ff5d56;
+}
 
 @media (max-width:1024px) {
     .nav .menu{
@@ -221,11 +275,28 @@ body{
         display: block;
     }
     .landing_page .side_text{
-        width: 80%;
+        width: 65%;
+    }
+    .landing_page .side_text .animated_text::after{
+        font-size: 6vmin;
+    }
+    @keyframes side {
+        0%{
+            left: 60vmin;
+        }
+        30%{
+            left: 0vw;
+        }
+        60%,100%{
+            left: 60vmin;
+        }
     }
     .landing_page .side_text p{
-        width: 80%;
-        font-size: large;
+        width: 90%;
+        font-size: 3vmin;
+    }
+    .landing_page .side_text h3{
+        font-size: 3.5vmin;
     }
     .landing_page .side_text button{
         width: 20vmax;
