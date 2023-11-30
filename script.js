@@ -12,6 +12,10 @@ gsap.from("#about .about_content .image_section", {
     scrollTrigger: {
         trigger: "#about .about_content .image_section",
         scroller: "body",
+        // markers:true,
+        start:"top 70%",
+        end:"bottom 110%",
+        scrub:true,
     },
     delay: 0.5, 
 });
@@ -22,6 +26,10 @@ gsap.from("#about .about_content .text_section", {
     scrollTrigger: {
         trigger: "#about .about_content .image_section",
         scroller: "body",
+        // markers:true,
+        start:"top 70%",
+        end:"bottom 110%",
+        scrub:true,
     },
     delay: 0.5, 
 });
