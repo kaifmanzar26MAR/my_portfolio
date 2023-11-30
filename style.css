@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600&family=Lato:ital,wght@0,300;0,400;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@200;300;500;600&family=Lato:ital,wght@0,300;0,400;0,900;1,700&display=swap');
 
 
 *{
@@ -33,9 +34,8 @@ body{
 }
 .nav .logo{
     width: 40%;
-    /* background-color: red; */
     font-size: 30px;
-    /* padding-left: 40px; */
+    font-family: 'Berkshire Swash', serif;
 }
 .nav .logo #lf{
     color:#ff5d56;
@@ -206,6 +206,7 @@ body{
 
 #about .about_welcome_content #heading_name{
     color: #ff5d56;
+    font-family: 'Berkshire Swash', serif;
 }
 #about .about_welcome_content #dot{
     color: #ff5d56;
