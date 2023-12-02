@@ -8,30 +8,30 @@
 gsap.from("#about .about_content .image_section", {
     x: -500,
     opacity: 0,
-    duration: 2,
+    duration: 1,
     scrollTrigger: {
         trigger: "#about .about_content .image_section",
         scroller: "body",
         // markers:true,
         start:"top 70%",
         end:"bottom 110%",
-        scrub:true,
+        // scrub:true,
     },
-    delay: 0.5, 
+    // delay: 1, 
 });
 gsap.from("#about .about_content .text_section", {
     y: 500,
     opacity: 0,
-    duration: 2,
+    duration: 1,
     scrollTrigger: {
         trigger: "#about .about_content .image_section",
         scroller: "body",
         // markers:true,
         start:"top 70%",
         end:"bottom 110%",
-        scrub:true,
+        // scrub:true,
     },
-    delay: 0.5, 
+    // delay: 1, 
 });
 
 var flag=true;
