@@ -166,9 +166,15 @@ body{
     color: gray;
     font-size: larger;
 }
-.landing_page .side_text button{
+.landing_page .side_text a{
+    text-decoration: none;
+    color:white;
+    width: fit-content;
+    height: fit-content;
+}
+.landing_page .side_text a button{
     width: 30vmin;
-    height: 18%;
+    height: 100%;
     padding: 20px ;
     background-color: transparent;
     color: white;
@@ -177,10 +183,12 @@ body{
     border-radius: 5px 5px 5px 5px;
 
 }
-.landing_page .side_text button:hover{
+
+.landing_page .side_text a button:hover{
     color:#ff5d56;
     border: 2px solid #ff5d56;
 }
+
 /* .landing_page .side_text button::before{
     content: " ";
     position: absolute;
