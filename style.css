@@ -414,10 +414,10 @@ body{
 }
 #resume{
     width: 100vw;
-    height:160vh;
+    height:fit-content;
     display: flex;
     flex-direction: column;
-    /* gap:10vh; */
+    gap:30px;
     align-items: center;
     justify-content: center;
     background-color: #111111;
@@ -431,7 +431,8 @@ body{
     justify-content: center;
     align-items: center;
     line-height: 40px;
-   
+    padding-top: 5vw;
+    /* padding-bottom: 10vw; */
 }
 #resume .res_welcome_content #heading_name{
     color: #ff5d56;
@@ -447,12 +448,13 @@ body{
 }
 
 #resume .res_container{
-    width: 100%;
+    width: 100vw;
     height: 60vh;
     /* background-color: yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 #resume .res_container .res_cara_all{
     width: 40%;
@@ -469,6 +471,7 @@ body{
     background-color: #ff5d56;
     width: 150px;
     padding: 15px;
+    margin-bottom: 30px;
 }
 #resume .res_container .res_cara_all .cara{
     width: 97%;
@@ -484,7 +487,7 @@ body{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    gap:20px;
+    /* gap:20px; */
     animation:slide 18s infinite;
     margin-top: 20px;
 }
@@ -530,68 +533,82 @@ body{
     color:gray;
     line-height: 25px;
 }
-#resume .res_container .sub_res{
-    width: 40%;
-    height: fit-content;
-    /* padding: 5%; */
-    display: flex;
-    /* align-items: center; */
-    flex-direction: column;
-    justify-content: center;
-}
-#resume .res_container .sub_res .sub_res_btn{
-    background-color: #ff5d56;
-    width: 150px;
-    padding: 15px;
-}
-#resume .res_container .sub_res .sub_res_container{
-    
-    width: 89%;
+.lower{
+    width: 80vw;
     height: 50vh;
+    /* padding: 10vw; */
     /* background-color: red; */
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
 }
-.sub_res_container .ratings{
-    padding: 20px 0px 20px 0px;
+.lower .ratings{
+    /* background-color: red; */
+    width: 50%;
+    height: 100%;
+}
+.lower .ratings .rating_btn{
+    background-color:#ff5d56;
+    width: 150px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+.lower .ratings .rating_content{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+}
+.rating_content .rating{
+    width: 20vw;
+    height: 70px;
+    /* background-color: rgb(0, 255, 136); */
+    line-height: 25px;
     font-size: large;
-    line-height: 30px;
 }
-.sub_res_container .achivements{
-    width: 250px;
+.lower .achivements{
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.lower .achivements .achive_btn{
+    background-color:#ff5d56;
+    width: 150px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+.achive_cards{
+    width: 100%;
+    
+    /* background-color: red; */
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+.achive_cards .card{
+    display: flex;
+    width: 17vw;
     height: 80px;
     background-color:#222222;
-    /* padding:10px 20px 10px 20px; */
-    /* border: 1px solid gray; */
-    margin: 20px 30px 20px 0px;
-    display: flex;
+    margin-bottom: 40px;
+    margin-right: 2.5vw;
+    border: 0.1px solid rgba(128, 128, 128, 0.45);
 
 }
-.achivements .achiv_logo{
+.card .card_logo{
     font-size: 40px;
-    width: 30%;
-    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border: 0.1px solid rgba(128, 128, 128, 0.471);
+    align-items: center;
+    width: 5vw;
     color: #ff5d56;
+    border-right: 0.1px solid gray;
 }
-.achivements .achiv_text{
-    width: 70%;
-    height: 100%;
+.card .card_text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
-    border: 0.1px solid rgba(128, 128, 128, 0.314);
-    border-left: none;
+    padding-left: 10px;
 }
-.achivements .achiv_text p{
-    color: gray;
-    font-weight: 400;
-}
+
+
 @media (max-width:1024px) {
     .nav .menu{
         display: none;
@@ -660,10 +677,18 @@ body{
         margin-right: 15px;
     }
     #resume{
-        height: 300vh;
+        height: fit-content;
+        /* gap: 10px; */
+    }
+    #resume .res_welcome_content{
+        padding-top: 10vw;
+        padding-bottom: 5vw;
+        /* background-color: red; */
     }
     #resume .res_container{
-        height: 150vh;
+        height: 120vh;
+        
+        /* background-color: red; */
     }
    
 
@@ -680,11 +705,42 @@ body{
 
     #resume .res_container{
         flex-direction: column;
+        gap: 50px;
     }
     #resume .res_container .res_cara_all{
         width: 80%;
-        gap: 20px;
+        /* gap: 30px; */
     }
+    .lower{
+        flex-direction: column;
+        gap: 30px;
+        height: fit-content;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .lower .ratings{
+        width: 100%;
+        height: fit-content;
+    }
+    .lower .ratings .rating_content{
+        width: 20vw;
+    }
+    .lower .achivements{
+        width: 100%;
+        height: fit-content;
+        
+    }
+    .achivements .achive_cards{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .achive_cards .card{
+        width: 250px;
+    }
+    .card .card_logo{
+        width: 70px;
+    }
+
     
 }
 @media (min-width:1024px) {
