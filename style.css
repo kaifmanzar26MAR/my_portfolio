@@ -889,6 +889,78 @@ form #btn:hover{
 
 }
 
+#footer{
+    width: 100vw;
+    height: fit-content;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#footer .name{
+    font-family:'Berkshire Swash', serif;
+    font-size: 40px;
+    padding: 30px;
+}
+#footer .name #first{
+    color:#ff5d56;
+}
+#footer .footer_container{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+.footer_container .logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.logos .logo{
+    text-decoration: none;
+    color:gray;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(59, 59, 59, 0.31);
+    border-radius: 50% 50%;
+    border: 0.1px solid rgba(128, 128, 128, 0.224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.logos .logo:hover{
+    background-color: transparent;
+    color:#ff5d56;
+    border: 0.1px solid #ff5d56;
+}
+.footer_container p{
+    text-align: center;
+    font-weight: 300;
+}
+.footer_container hr{
+    width: 10%;
+    margin-bottom: 5%;
+}
+.footer_container p a{
+    /* text-decoration: none; */
+    color:gray;
+}
+.footer_container p a:hover{
+    /* text-decoration: none; */
+    color:#ff5d56;
+}
+
+
 @media (max-width:1024px) {
     .nav .menu{
         display: none;
@@ -1036,12 +1108,24 @@ form #btn:hover{
 
     
 }
-@media (max-width:704px) {
+@media (max-width:804px) {
     #contact .form form{
         width: 90%;
         gap: 20px;
     }
     form #name,#email{
         width: 100%;
+    }
+    #footer .name{
+        font-size: 5vw;
+    }
+    #footer .footer_container{
+        width: 90vw;
+        font-size: 3vw;
+    }
+    .footer_container .logos .logo{
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
     }
 }
