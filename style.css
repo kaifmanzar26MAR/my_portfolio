@@ -336,7 +336,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 9999;
+    z-index: 69;
 }
 .serv_container .hover{
     position: absolute;
@@ -370,7 +370,7 @@ body{
     padding: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
-    z-index: 9999;
+    z-index: 69;
 }
 .serv_container .iinn i{
     color:#ff5d56;
