@@ -376,16 +376,18 @@ body{
     color:#ff5d56;
     font-size: 50px;
     padding: 20px;
-    /* z-index: 69; */
+    z-index: 69;
 }
 .serv_container .iinn h3{
     font-weight: 400;
     padding-bottom: 20px;
+    z-index: 69;
 }
 .serv_container .iinn p{
     color:gray;
     font-size: 14px;
     text-align:center;
+    z-index: 69;
     /* text-justify:distribute; */
 }
 
@@ -977,6 +979,10 @@ form #btn:hover{
     .landing_page .side_text .animated_text::after{
         font-size: 6vmin;
     }
+    .landing_page .side_text .animated_text .black{
+        height: 11vmin;
+
+    }
     @keyframes side {
         0%{
             left: 60vmin;
@@ -996,7 +1002,7 @@ form #btn:hover{
         font-size: 3.5vmin;
     }
     .landing_page .side_text button{
-        width: 20vmax;
+        width: fit-content;
     }
     #about{
         height: fit-content;
