@@ -479,7 +479,7 @@ body{
     transform: translateX(-103.9%);
 }
 64%,93% {
-    transform: translateX(-207.8%);
+    transform: translateX(-200.8%);
 }
 
 100% {
@@ -782,10 +782,20 @@ form{
 }
 form input{
     padding-left: 20px;
+    color: gray;
     font-size: 15px;
     background-color:#222222;
     border: 0.1px solid rgba(84, 83, 83, 0.521);
 
+}
+
+form textarea{
+    color: gray;
+    padding: 20px;
+    font-size: 15px;
+    background-color:#222222;
+    border: 0.1px solid rgba(84, 83, 83, 0.521);
+    resize: none;
 }
 form #name,#email{
     width: 48.16%;
@@ -810,6 +820,7 @@ form #btn{
     border: 0.1px solid #ff5d56;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 form #btn:hover{
     background-color: #ff5d56;
@@ -874,7 +885,7 @@ form #btn:hover{
 }
 .contact_info .info .in hr{
     width: 3vw;
-    height: 1.5px;
+    height: 1px;
     background-color: #ff5d56;
     border: 1px solid #ff5d56;
 }
@@ -952,6 +963,7 @@ form #btn:hover{
 .footer_container hr{
     width: 10%;
     margin-bottom: 5%;
+    border: 1px solid gray;
 }
 .footer_container p a{
     /* text-decoration: none; */
