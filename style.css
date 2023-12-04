@@ -999,7 +999,8 @@ form #btn:hover{
         width: 20vmax;
     }
     #about{
-        height: 210vh;
+        height: fit-content;
+        padding-bottom: 50px;
     }
     #about .about_content{
         flex-direction: column;
@@ -1023,8 +1024,8 @@ form #btn:hover{
         flex-wrap: nowrap;
     }
     #services .serv_box_container .serv_container{
-        width: 80%;
-        margin-right: 15px;
+        width: 100%;
+        /* margin-right: 15px; */
     }
     #resume{
         height: fit-content;
