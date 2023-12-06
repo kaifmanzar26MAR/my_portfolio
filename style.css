@@ -1057,6 +1057,7 @@ form #btn:hover{
     #about .about_content .text_section{
         /* margin-top: 57vh; */
         font-size: 16px;
+        width: 90%;
         
     }
     #about .about_content .text_section p{
