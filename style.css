@@ -279,7 +279,7 @@ body{
     flex-direction: column;
     line-height: 30px;
     width: 100%;
-    height: 20vh;
+    height: 130px;
 }
 #about .about_content .text_section .about_hilights i{
     color:#ff5d56;
