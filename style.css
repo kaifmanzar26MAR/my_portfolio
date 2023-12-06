@@ -808,6 +808,7 @@ form textarea{
     background-color:#222222;
     border: 0.1px solid rgba(84, 83, 83, 0.521);
     resize: none;
+    outline: none;
 }
 form #name,#email{
     width: 48.16%;
